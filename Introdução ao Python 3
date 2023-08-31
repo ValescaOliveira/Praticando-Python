@@ -1,0 +1,11 @@
+'''
+Dada a quilometragem parcial de um carro e a quantidade de litros gastos ele para percorrer esta quilometragem, fazer um algoritmo que calcule quantos Km/l o carro percorreu.
+'''
+
+
+km_percorrido = float(input("Digite a km percorrida: "))
+litros_gastos = float(input("Digite a quantidade de litros gastos: "))
+
+autonomia = km_percorrido / litros_gastos
+
+print(f"A autonomia atual do veiculo é: {autonomia: .2f} ")
