@@ -1,0 +1,16 @@
+'''
+Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
+'''
+
+votos_brancos = int(input("Digite a quantidade de votos brancos: "))
+votos_nulos = int(input("Digite a quantidade de votos nulos: "))
+votos_validos = int(input("Digite a quantidade de votos validos: "))
+total_eleitores = votos_brancos + votos_nulos + votos_validos
+
+perc_votos_brancos = (votos_brancos * 100) / total_eleitores
+perc_votos_nulos = (votos_nulos * 100) / total_eleitores
+perc_votos_validos = (votos_validos * 100) / total_eleitores
+
+print(f"O percentual de votos brancos é: {perc_votos_brancos: .2f}%")
+print(f"O percentual de votos nulos é: {perc_votos_nulos: .2f}%")
+print(f"O percentual de votos validos é: {perc_votos_validos: .2f}%")
