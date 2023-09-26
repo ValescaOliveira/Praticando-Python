@@ -1,0 +1,13 @@
+'''
+Faça um programa que verifique se uma "senha” numérica digitada pelo usuário está correta. O programa deve
+repetir o pedido até que o usuário escreva o valor correto. A senha correta deve estar definida no próprio
+programa.
+'''
+
+senha_correta = 4567
+senha_usr = int(input("Digite a senha: "))
+
+while (senha_usr != senha_correta):
+    senha_usr = int(input("Senha incorreta. Digite-a novamente: "))
+
+print("Senha correta!")
