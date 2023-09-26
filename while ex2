@@ -1,0 +1,37 @@
+'''
+Desenvolva um programa que recebe as notas dos alunos de uma turma. Seu programa deverá ser interrompido quando uma
+nota negativa for digitada.
+Durante o processamento seu programa deverá contar o número de alunos nas seguintes condições:
+
+- média abaixo de 3.5 (reprovados direto)
+- média entre 3,5 e 7 (exame)
+- acima de 7 (aprovados)
+
+Calcule a média aritmética da turma e informe o resultado no final.
+E exiba na tela a quantidade de alunos: reprovados direto, exame aprovado.
+'''
+
+
+soma_notas = 0
+qtde_aprovados = 0
+qtde_exame = 0
+qtde_reprovados = 0
+
+nota = float(input("Digite a nota do aluno: "))
+
+while (nota >= 0):
+    soma_notas+=nota
+    if (nota > 7.0):
+        qtde_aprovados+=1
+    elif (nota >= 3.5):
+        qtde_exame+=1
+    else:
+        qtde_reprovados+=1
+    nota = float(input("Digite a nota do aluno: "))
+
+media_turma = soma_notas / (qtde_aprovados+qtde_exame+qtde_reprovados)
+
+print(f"A média da turma é: [{media_turma:.1f}")
+print(f"{qtde_aprovados} foram aprovados")
+print(f"{qtde_exame} foram para exame")
+print(f"{qtde_reprovados} foram reprovados direto")
