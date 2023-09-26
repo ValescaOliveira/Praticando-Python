@@ -1,0 +1,21 @@
+'''
+Escreva um algoritmo que solicite dois números e devolva quantos pares e ímpares há entre esses dois números.
+Exemplo: entre 7 e 10 há 2 números pares e 2 números ímpares
+'''
+
+inicio = int(input("Digite o inicio do intervalo: "))
+fim = int(input("Digite o fim do intervalo: "))
+
+qtde_pares = 0
+qtde_impares = 0
+cont = inicio
+
+while (cont <= fim):
+    if (cont % 2 == 0):
+        qtde_pares+=1
+    else:
+        qtde_impares+=1
+    cont+=1
+
+print(f"Quantidade de pares: {qtde_pares}")
+print(f"Quantidade de impares: {qtde_impares}")
